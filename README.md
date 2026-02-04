@@ -11,10 +11,14 @@
 git clone https://github.com/Nye0126/shixunUnity.git。
 
 每次开始写代码前，先执行 git pull 确保拿到的是最新版。
+
 ——————————————   上传   ——————————————————————————
-成为协作者之后可以进入文件管理器的当前目录，然后右键打开git bash（前提是你下载了git）
+
+成为协作者之后可以进入文件管理器的当前目录，然后右键打开git bash（前提是你下载了git）。
 输入以下几行指令（右键paste粘贴）：
 
 git add .  #更新文件
+
 git commit -m "修复了……(你干嘛了）"   # 写备注
+
 git push origin main   #上传文件
