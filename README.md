@@ -10,7 +10,7 @@
 不要直接下载 ZIP，要在文件夹里右键：
 git clone https://github.com/Nye0126/shixunUnity.git。
 
-每次开始写代码前，先执行 git pull 确保拿到的是最新版。
+每次开始写代码前，先执行 git pull 确保拿到的是最新版：git pull origin main
 
 ——————————————   上传   ——————————————————————————
 
