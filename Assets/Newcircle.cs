@@ -36,7 +36,21 @@ public class Newcircle : MonoBehaviour //define 玩家操控物体
     }
     void Shoot()
     {
-        Instantiate(bullet,transform.position,transform.rotation);//create bullet
+        // 计算头部偏移量
+       
+        Vector3 spawnPosition = transform.position + transform.up * 0.5f;
+
+       
+        GameObject b = Instantiate(bullet, spawnPosition, transform.rotation);
+
+        
+        Newbullet script = b.GetComponent<Newbullet>();
+        if (script != null)
+        {
+            script.owner = "player";
+        }
+
+        Debug.Log("player shoot toward: " + transform.up);
     }
     void Moveplayer()
     {
