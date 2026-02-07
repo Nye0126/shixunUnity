@@ -24,12 +24,15 @@ public class EnemyPatrol : MonoBehaviour
     private int currentWaypointIndex = 0;
     private float waitCounter;
     private bool isWaiting;
+    private Rigidbody2D rb;
 
     void Start()
     {
         fov = GetComponent<Newenemies>();
         // 自动寻找带有 Player 标签的对象
         GameObject playerObj = GameObject.FindWithTag("Player");
+        rb = GetComponent<Rigidbody2D>();
+
         if (playerObj != null) playerTransform = playerObj.transform;
 
         if (waypoints.Length > 0) transform.position = waypoints[0].position;
@@ -58,6 +61,10 @@ public class EnemyPatrol : MonoBehaviour
             // 注意：如果你希望他在停止追击时就能开火，记得把 Inspector 里的 Attack Distance 改为 4 或更高
             if (distance < attackDistance && Time.time >= nextFireTime)
             {
+                if (rb != null)
+                {
+                    rb.velocity = Vector2.zero;
+                }
                 Shoot();
                 nextFireTime = Time.time + 1f / fireRate;
             }
