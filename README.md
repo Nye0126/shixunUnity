@@ -23,10 +23,13 @@ git clone https://github.com/Nye0126/shixunUnity.git。
 进入**文件资源管理器的当前文件夹目录**，然后右键->显示更多选项->Open Git Bash Here，
 输入以下几行指令（右键paste粘贴）：
 
-！. git add .  #更新文件
+1. git add .  #更新文件
 
 2. git commit -m "修复了/上传了……(你干嘛了）"   # 写备注
 
+——————————————————可以在这里再执行一次  git pull origin main——————————————————————————
+
 3. git push origin main   #上传文件
+
 4. 可能在上传过程中遇到push不上去的情况，可以联系我远控，或者让我确认，或者问问大模型，但是**一定一定要确认上传成功**
 
