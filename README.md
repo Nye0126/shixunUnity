@@ -34,3 +34,8 @@ git clone https://github.com/Nye0126/shixunUnity.git。
 
 4. 可能在上传过程中遇到push不上去的情况，可以联系我远控，或者让我确认，或者问问大模型，但是**一定一定要确认上传成功**
 
+5. 可能需要代理：
+
+git config --global http.proxy http://127.0.0.1:7890
+
+ git config --global https.proxy http://127.0.0.1:7890
