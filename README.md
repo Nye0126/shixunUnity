@@ -17,6 +17,7 @@ git clone https://github.com/Nye0126/shixunUnity.git。
 *出现Already up to date.的文字之后就可以安心修改了*
 
 5. 打开unity hub，点击界面右上角新项目旁边的【打开】按钮，打开你刚刚下载的文件夹，界面就出来了。
+6. 注意！！！！如果不是第一次下载（电脑里面已有shixunUnity），直接git pull origin main拉取一下即可
 
 —————————————————————————   上传   ——————————————————————————
 
