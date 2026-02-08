@@ -8,7 +8,8 @@ public class EnemyPatrol : MonoBehaviour
     public float chaseSpeed = 4f;     // 追击速度（通常比巡逻快）
     public float waitTime = 1f;       // 到达路点的停留时间
     public float stoppingDistance = 1.2f; // 距离玩家多远时停止（防止重叠）
-
+    public bool keshiji=false;
+    public Animator anim;
     //sheji
     public GameObject bulletPrefab;   // 拖入你的子弹预制体
     public Newbullet bullet;  //子弹预制体脚本
@@ -37,6 +38,7 @@ public class EnemyPatrol : MonoBehaviour
 
     void Update()
     {
+        anim.SetBool("keshiji",keshiji);
         // 判断是否处于警报状态且玩家存在
         if (fov != null && fov.IsAlerted && playerTransform != null)
         {
@@ -134,7 +136,11 @@ public class EnemyPatrol : MonoBehaviour
 
             Instantiate(bulletPrefab, firePoint.position, bulletRotation);
 
-        
+            keshiji = true;
+        }
+        else
+        {
+            keshiji = false;
         }
     }
 }

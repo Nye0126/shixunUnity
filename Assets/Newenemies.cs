@@ -8,7 +8,7 @@ public class Newenemies : MonoBehaviour
     public float viewRadius = 5f;       // 视野距离
    
     public float viewAngle = 90f;      // 视野角度
-
+    public Animator anim;
   
     public LayerMask playerMask;       // 玩家图层
     public LayerMask obstacleMask;     // 墙壁/障碍物图层（非常重要！请确保只选Obstacle层）
@@ -38,6 +38,7 @@ public class Newenemies : MonoBehaviour
 
     void Update()
     {
+        anim.SetBool("jingjie", canSeePlayer);
         // 增加一层保护：如果本身就是尸体，就不再执行任何逻辑
         // 虽然在 Die() 里禁用脚本更彻底，但这里加一层更稳健
         if (gameObject.CompareTag("DeadBody")) return;
