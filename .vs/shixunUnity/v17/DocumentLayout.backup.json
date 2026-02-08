@@ -7,44 +7,44 @@
       "RelativeMoniker": "D:0:0:{4C97D147-6970-B90D-14DB-59C53A100040}|Assembly-CSharp.csproj|solutionrelative:assets\\newcircle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4C97D147-6970-B90D-14DB-59C53A100040}|Assembly-CSharp.csproj|C:\\Users\\92874\\Desktop\\shixunUnity\\assets\\collideitschildren.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C97D147-6970-B90D-14DB-59C53A100040}|Assembly-CSharp.csproj|solutionrelative:assets\\collideitschildren.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C97D147-6970-B90D-14DB-59C53A100040}|Assembly-CSharp.csproj|C:\\Users\\92874\\Desktop\\shixunUnity\\assets\\newbullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C97D147-6970-B90D-14DB-59C53A100040}|Assembly-CSharp.csproj|solutionrelative:assets\\newbullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C97D147-6970-B90D-14DB-59C53A100040}|Assembly-CSharp.csproj|C:\\Users\\92874\\Desktop\\shixunUnity\\assets\\newdoor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C97D147-6970-B90D-14DB-59C53A100040}|Assembly-CSharp.csproj|solutionrelative:assets\\newdoor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4C97D147-6970-B90D-14DB-59C53A100040}|Assembly-CSharp.csproj|C:\\Users\\92874\\Desktop\\shixunUnity\\assets\\enemypatrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4C97D147-6970-B90D-14DB-59C53A100040}|Assembly-CSharp.csproj|solutionrelative:assets\\enemypatrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C97D147-6970-B90D-14DB-59C53A100040}|Assembly-CSharp.csproj|C:\\Users\\92874\\Desktop\\shixunUnity\\assets\\enemyhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C97D147-6970-B90D-14DB-59C53A100040}|Assembly-CSharp.csproj|solutionrelative:assets\\enemyhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4C97D147-6970-B90D-14DB-59C53A100040}|Assembly-CSharp.csproj|C:\\Users\\92874\\Desktop\\shixunUnity\\assets\\newenemies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4C97D147-6970-B90D-14DB-59C53A100040}|Assembly-CSharp.csproj|solutionrelative:assets\\newenemies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{4C97D147-6970-B90D-14DB-59C53A100040}|Assembly-CSharp.csproj|C:\\Users\\92874\\Desktop\\shixunUnity\\assets\\enemyhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C97D147-6970-B90D-14DB-59C53A100040}|Assembly-CSharp.csproj|solutionrelative:assets\\enemyhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C97D147-6970-B90D-14DB-59C53A100040}|Assembly-CSharp.csproj|C:\\Users\\92874\\Desktop\\shixunUnity\\assets\\newdoor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C97D147-6970-B90D-14DB-59C53A100040}|Assembly-CSharp.csproj|solutionrelative:assets\\newdoor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C97D147-6970-B90D-14DB-59C53A100040}|Assembly-CSharp.csproj|C:\\Users\\92874\\Desktop\\shixunUnity\\assets\\newbullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C97D147-6970-B90D-14DB-59C53A100040}|Assembly-CSharp.csproj|solutionrelative:assets\\newbullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4C97D147-6970-B90D-14DB-59C53A100040}|Assembly-CSharp.csproj|C:\\Users\\92874\\Desktop\\shixunUnity\\assets\\keephealthbarupright.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4C97D147-6970-B90D-14DB-59C53A100040}|Assembly-CSharp.csproj|solutionrelative:assets\\keephealthbarupright.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C97D147-6970-B90D-14DB-59C53A100040}|Assembly-CSharp.csproj|C:\\Users\\92874\\Desktop\\shixunUnity\\assets\\collideitschildren.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C97D147-6970-B90D-14DB-59C53A100040}|Assembly-CSharp.csproj|solutionrelative:assets\\collideitschildren.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4C97D147-6970-B90D-14DB-59C53A100040}|Assembly-CSharp.csproj|C:\\Users\\92874\\Desktop\\shixunUnity\\assets\\newenemiesgroup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4C97D147-6970-B90D-14DB-59C53A100040}|Assembly-CSharp.csproj|solutionrelative:assets\\newenemiesgroup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4C97D147-6970-B90D-14DB-59C53A100040}|Assembly-CSharp.csproj|C:\\Users\\92874\\Desktop\\shixunUnity\\assets\\fieldofviewmesh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C97D147-6970-B90D-14DB-59C53A100040}|Assembly-CSharp.csproj|solutionrelative:assets\\fieldofviewmesh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4C97D147-6970-B90D-14DB-59C53A100040}|Assembly-CSharp.csproj|C:\\Users\\92874\\Desktop\\shixunUnity\\assets\\enemybullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4C97D147-6970-B90D-14DB-59C53A100040}|Assembly-CSharp.csproj|solutionrelative:assets\\enemybullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C97D147-6970-B90D-14DB-59C53A100040}|Assembly-CSharp.csproj|C:\\Users\\92874\\Desktop\\shixunUnity\\assets\\fieldofviewmesh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C97D147-6970-B90D-14DB-59C53A100040}|Assembly-CSharp.csproj|solutionrelative:assets\\fieldofviewmesh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,7 +58,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "CollideItsChildren.cs",
               "DocumentMoniker": "C:\\Users\\92874\\Desktop\\shixunUnity\\Assets\\CollideItsChildren.cs",
               "RelativeDocumentMoniker": "Assets\\CollideItsChildren.cs",
@@ -66,19 +66,21 @@
               "RelativeToolTip": "Assets\\CollideItsChildren.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvw0AAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-07T07:04:08.636Z"
+              "WhenOpened": "2026-02-07T07:04:08.636Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Newbullet.cs",
               "DocumentMoniker": "C:\\Users\\92874\\Desktop\\shixunUnity\\Assets\\Newbullet.cs",
               "RelativeDocumentMoniker": "Assets\\Newbullet.cs",
               "ToolTip": "C:\\Users\\92874\\Desktop\\shixunUnity\\Assets\\Newbullet.cs",
               "RelativeToolTip": "Assets\\Newbullet.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAABIwB0AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-06T03:36:19.939Z"
+              "WhenOpened": "2026-02-06T03:36:19.939Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -88,14 +90,14 @@
               "RelativeDocumentMoniker": "Assets\\Newcircle.cs",
               "ToolTip": "C:\\Users\\92874\\Desktop\\shixunUnity\\Assets\\Newcircle.cs",
               "RelativeToolTip": "Assets\\Newcircle.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEIAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAgwKUAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-06T11:54:36.491Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "KeepHealthBarUpright.cs",
               "DocumentMoniker": "C:\\Users\\92874\\Desktop\\shixunUnity\\Assets\\KeepHealthBarUpright.cs",
               "RelativeDocumentMoniker": "Assets\\KeepHealthBarUpright.cs",
@@ -103,23 +105,25 @@
               "RelativeToolTip": "Assets\\KeepHealthBarUpright.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-06T03:34:57.249Z"
+              "WhenOpened": "2026-02-06T03:34:57.249Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "EnemyHealth.cs",
               "DocumentMoniker": "C:\\Users\\92874\\Desktop\\shixunUnity\\Assets\\EnemyHealth.cs",
               "RelativeDocumentMoniker": "Assets\\EnemyHealth.cs",
               "ToolTip": "C:\\Users\\92874\\Desktop\\shixunUnity\\Assets\\EnemyHealth.cs",
               "RelativeToolTip": "Assets\\EnemyHealth.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAAUwCAAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAACkAAAAAAAAAAAAQwEcAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-06T03:27:52.645Z"
+              "WhenOpened": "2026-02-06T03:27:52.645Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 9,
               "Title": "EnemyBullet.cs",
               "DocumentMoniker": "C:\\Users\\92874\\Desktop\\shixunUnity\\Assets\\EnemyBullet.cs",
               "RelativeDocumentMoniker": "Assets\\EnemyBullet.cs",
@@ -139,11 +143,12 @@
               "RelativeToolTip": "Assets\\NewEnemiesGroup.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-05T14:40:34.972Z"
+              "WhenOpened": "2026-02-05T14:40:34.972Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "FieldOfViewMesh.cs",
               "DocumentMoniker": "C:\\Users\\92874\\Desktop\\shixunUnity\\Assets\\FieldOfViewMesh.cs",
               "RelativeDocumentMoniker": "Assets\\FieldOfViewMesh.cs",
@@ -155,31 +160,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "EnemyPatrol.cs",
               "DocumentMoniker": "C:\\Users\\92874\\Desktop\\shixunUnity\\Assets\\EnemyPatrol.cs",
               "RelativeDocumentMoniker": "Assets\\EnemyPatrol.cs",
               "ToolTip": "C:\\Users\\92874\\Desktop\\shixunUnity\\Assets\\EnemyPatrol.cs",
               "RelativeToolTip": "Assets\\EnemyPatrol.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAADwvygAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAHAAAAAAAAAAAAAUwIMAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-05T07:13:12.685Z"
+              "WhenOpened": "2026-02-05T07:13:12.685Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "Newenemies.cs",
               "DocumentMoniker": "C:\\Users\\92874\\Desktop\\shixunUnity\\Assets\\Newenemies.cs",
               "RelativeDocumentMoniker": "Assets\\Newenemies.cs",
               "ToolTip": "C:\\Users\\92874\\Desktop\\shixunUnity\\Assets\\Newenemies.cs",
               "RelativeToolTip": "Assets\\Newenemies.cs",
-              "ViewState": "AgIAAJIAAAAAAAAAAAAEwKYAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAACkAAAAAAAAAAAAQwEcAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-05T06:46:57.85Z"
+              "WhenOpened": "2026-02-05T06:46:57.85Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Newdoor.cs",
               "DocumentMoniker": "C:\\Users\\92874\\Desktop\\shixunUnity\\Assets\\Newdoor.cs",
               "RelativeDocumentMoniker": "Assets\\Newdoor.cs",
@@ -187,7 +194,8 @@
               "RelativeToolTip": "Assets\\Newdoor.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-04T10:15:33.44Z"
+              "WhenOpened": "2026-02-04T10:15:33.44Z",
+              "EditorCaption": ""
             }
           ]
         }

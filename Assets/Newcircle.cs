@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro; // TextMeshPro命名空间
 using UnityEngine;
-using UnityEngine.UIElements;
+using UnityEngine.Analytics;
+using UnityEngine.UI;
 
-public class Newcircle : MonoBehaviour //define 玩家操控物体
+public class Newcircle : MonoBehaviour
 {
     public float moveSpeed = 2f;
     public float rotationSpeed = 700f;
@@ -11,24 +13,41 @@ public class Newcircle : MonoBehaviour //define 玩家操控物体
     private Vector2 moveInput;
     public GameObject bullet;
     public Animator anim;
+    public GameObject deathPicture;
+    public Image screenFader;
 
-    // 新增：玩家血量相关变量
-    public float maxHp = 100f; // 最大血量
-    private float currentHp;   // 当前血量
+    // 玩家血量相关变量
+    public float maxHp = 100f;
+    private float currentHp;
 
-    // Start is called before the first frame update
+    // TextMeshPro文本组件
+    public TMP_Text hpText;
+    public GameObject gameOverUI; 
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        // 初始化血量为最大值
         currentHp = maxHp;
-        Debug.Log("玩家初始血量: " + currentHp);
+
+        // 可选：手动赋值（如果拖拽仍有问题，取消下面注释）
+        // GameObject hpTextObj = GameObject.Find("HpText");
+        // if (hpTextObj != null)
+        // {
+        //     hpText = hpTextObj.GetComponent<TMP_Text>();
+        // }
+        // else
+        // {
+        //     Debug.LogError("UI text object named HpText not found!");
+        // }
+
+        // 初始化血量显示
+        UpdateHpUI();
+        Debug.Log("Player initial HP: " + currentHp); // 中文→英文
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if (rb != null)//wasd input
+        if (rb != null)
         {
             float moveX = Input.GetAxisRaw("Horizontal");
             float moveY = Input.GetAxisRaw("Vertical");
@@ -37,6 +56,7 @@ public class Newcircle : MonoBehaviour //define 玩家操控物体
             anim.SetFloat("hp", Mathf.Abs(currentHp));
             moveInput = new Vector2(moveX, moveY).normalized;
             SmoothRotate();
+
             if (Input.GetMouseButtonDown(0))
             {
                 Shoot();
@@ -46,9 +66,7 @@ public class Newcircle : MonoBehaviour //define 玩家操控物体
 
     void Shoot()
     {
-        // 计算头部偏移量
         Vector3 spawnPosition = transform.position + transform.up * 0.5f;
-
         GameObject b = Instantiate(bullet, spawnPosition, transform.rotation);
 
         Newbullet script = b.GetComponent<Newbullet>();
@@ -68,58 +86,117 @@ public class Newcircle : MonoBehaviour //define 玩家操控物体
     void FixedUpdate()
     {
         Moveplayer();
-        SmoothRotate();//add smooth ratation
+        SmoothRotate();
     }
 
     void SmoothRotate()
     {
         Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         Vector2 lookDir = (Vector2)mousePosition - rb.position;
-        float angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg;
+        float angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg-90f;
         float smoothedAngle = Mathf.MoveTowardsAngle(rb.rotation, angle, rotationSpeed * Time.fixedDeltaTime);
         rb.MoveRotation(smoothedAngle);
     }
 
-    // 新增：处理碰撞检测
+    
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        // 检查碰撞对象是否是子弹（根据子弹预制体的标签或名称判断）
-        // 建议给子弹预制体添加 "Bullet" 标签，这样判断更准确
+        if (collision.gameObject.CompareTag("EnemyBullet"))
+        {
+            TakeDamage(10f); 
+            Destroy(collision.gameObject);
+            return;
+        }
+
+       
         if (collision.gameObject.CompareTag("Bullet"))
         {
-            // 获取子弹的owner，避免玩家被自己的子弹击中
             Newbullet bulletScript = collision.gameObject.GetComponent<Newbullet>();
             if (bulletScript != null && bulletScript.owner != "player")
             {
-                TakeDamage(50f); // 受到50点伤害
-                // 销毁击中玩家的子弹
+                TakeDamage(50f);
                 Destroy(collision.gameObject);
             }
         }
     }
 
-    // 新增：扣血方法
+    // 扣血方法
     public void TakeDamage(float damageAmount)
     {
-        // 扣血
         currentHp -= damageAmount;
-        // 确保血量不会低于0
         currentHp = Mathf.Max(currentHp, 0);
 
-        Debug.Log("玩家受到 " + damageAmount + " 点伤害，剩余血量: " + currentHp);
+        // 更新血量UI显示
+        UpdateHpUI();
 
-        // 血量为0时的处理（可根据需求扩展，比如死亡动画、游戏结束等）
+        Debug.Log("Player took " + damageAmount + " damage, remaining HP: " + currentHp); 
+
         if (currentHp <= 0)
         {
-            Debug.Log("玩家死亡！");
-            // 这里可以添加死亡逻辑，比如销毁玩家、触发游戏结束等
+            Debug.Log("Player died!");
             // Destroy(gameObject);
+            //加入 死亡ui
+            Die();
         }
     }
 
-    // 可选：获取当前血量的方法（方便UI显示等）
+    
+    private void UpdateHpUI()
+    {
+        if (hpText != null)
+        {
+           
+            hpText.text = $"HP: {currentHp}/{maxHp}";
+        }
+    }
+
     public float GetCurrentHp()
     {
         return currentHp;
+    }
+    void Die()
+    {
+
+        if (gameOverUI != null)
+        {
+            gameOverUI.SetActive(true);
+            StartCoroutine(DeathSequence());
+           
+        }
+    }
+    IEnumerator DeathSequence()
+    {
+        // 等待一小会儿，让玩家先看清楚角色倒地的动画
+        yield return new WaitForSeconds(1.0f);
+
+        // --- 画面渐黑动画 ---
+        float duration = 1.5f; // 变黑过程持续 1.5 秒
+        float timer = 0;
+        while (timer < duration)
+        {
+            timer += Time.deltaTime;
+            // 让遮罩的透明度从 0 渐变到 0.85 (85% 黑)
+            if (screenFader != null)
+            {
+                float alpha = Mathf.Lerp(0, 0.85f, timer / duration);
+                screenFader.color = new Color(0, 0, 0, alpha);
+            }
+            yield return null; // 等待下一帧
+        }
+
+        // --- 弹出 UI ---
+        // 画面变黑后，同时显示文字和图片
+        if (gameOverUI != null) gameOverUI.SetActive(true);
+        if (deathPicture != null) deathPicture.SetActive(true);
+
+        // --- 等待并退出 ---
+        // 让玩家盯着悲伤的画面看 3 秒
+        yield return new WaitForSeconds(3.0f);
+
+        Debug.Log("Quitting Game...");
+        Application.Quit();
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#endif
     }
 }

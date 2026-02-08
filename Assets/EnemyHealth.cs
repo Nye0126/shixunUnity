@@ -65,14 +65,11 @@ public class EnemyHealth : MonoBehaviour
         {
             rb.velocity = Vector2.zero;       // 速度归零
             rb.angularVelocity = 0;          // 旋转速度归零
-            rb.isKinematic = true;           // 【核心】：让它不再受物理引擎控制（不会被推走）
-                                             // 或者使用 rb.simulated = false; 直接关掉物理模拟
+            rb.isKinematic = true;           
+                                            
         }
 
-        // 2. 稍微缩小一点碰撞箱（可选）
-        // 防止其他巡逻的敌人路过时被这具尸体“绊倒”
-        CircleCollider2D col = GetComponent<CircleCollider2D>();
-        if (col != null) col.radius *= 0.5f;
+        anim.SetTrigger("Die");
 
     }
 }

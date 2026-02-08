@@ -22,6 +22,7 @@ public class Newenemies : MonoBehaviour
     public NewEnemiesGroup myGroup;
     private bool lastCanSeePlayer;
     private bool alertedByGroup = false;
+    private Transform playerTransform;
 
     // 综合判定：自己看到或小组通报
     public bool IsAlerted => canSeePlayer || alertedByGroup || (myGroup != null && myGroup.isGroupAlerted);
@@ -30,24 +31,27 @@ public class Newenemies : MonoBehaviour
 
     void Start()
     {
+        Newcircle playerScript = FindObjectOfType<Newcircle>();
         if (myGroup == null)
         {
             myGroup = FindObjectOfType<NewEnemiesGroup>();
+        }
+        if (playerScript != null)
+        {
+            playerTransform = playerScript.transform;
         }
     }
 
     void Update()
     {
         anim.SetBool("jingjie", canSeePlayer);
-        // 增加一层保护：如果本身就是尸体，就不再执行任何逻辑
-        // 虽然在 Die() 里禁用脚本更彻底，但这里加一层更稳健
+        
         if (gameObject.CompareTag("DeadBody")) return;
 
         FieldOfViewCheck();
         HandleAlert();
 
-        // 建议把尸体检测频率降低，不需要每帧都找尸体
-        // 这符合你对性能优化的研究兴趣
+        Debug.DrawRay(transform.position, (playerTransform.position - transform.position), Color.green);
         DetectDeadBodies();
     }
 
@@ -65,8 +69,7 @@ public class Newenemies : MonoBehaviour
             {
                 float distanceToTarget = Vector2.Distance(transform.position, target.position);
 
-                // 核心修复点：射线检测墙壁。如果撞到了障碍物，说明被挡住了
-                // 注意：obstacleMask 绝对不能包含 Player 层，否则射线会撞到玩家导致判定失败
+               
                 RaycastHit2D hit = Physics2D.Raycast(transform.position, directionToTarget, distanceToTarget, obstacleMask);
 
                 if (hit.collider == null)

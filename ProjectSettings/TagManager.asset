@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - DeadBody
+  - EnemyBullet
+  - Bullet
   layers:
   - Default
   - TransparentFX
