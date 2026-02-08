@@ -8,3 +8,6 @@
 *.csproj
 *.sln
 *.unityproj
+Logs/
+UserSettings/
+Library/
